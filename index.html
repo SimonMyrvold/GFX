@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="Style/output.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
+</head>
+
+<body class="bg-main1">
+
+    
+    <h1 class="text-center text-main3 select-none text-4xl pt-4">Graphic Card Simulator</h1>
+
+
+    <p class=" w-11 text-main4 mb-1 ml-7">Scroll</p>
+    <button id="up" class=" w-11 bg-main2 border border-main3 text-main4 mb-1 ml-1">Up</button>
+    <button id="down" class=" w-11 bg-main2 border border-main3 text-main4">Down</button>
+    <br>
+    <button id="right" class=" w-11 bg-main2 border border-main3 text-main4 ml-1">Right</button>
+    <button id="left" class=" w-11 bg-main2 border border-main3 text-main4">Left</button>
+
+    <div class="flex mt-[5vh]">
+
+        <div class="rounded-x1 border-main2 border-[3px]  mt-[35vh] text-center absolute tablet:mt-[10vw] tablet:w-[30vw] bg-main1">
+            <br class=" select-none">
+            <label class="block mb-2 text-sm font-medium select-none text-main3 dark:text-gray-300">Select Style</label>    
+            <br class=" select-none">    
+              
+            <i id="boxbutton" class="fa-regular select-none fa-square fa-3x font-bold m-1 hover:text-blue-300"></i>
+            <i id="circlebutton" class="fa-regular select-none fa-circle fa-3x font-bold m-1 hover:text-blue-300"></i>
+            <i id="linebutton" class="fas select-none fa-grip-lines fa-3x font-bold m-1 hover:text-blue-300"></i>
+            <i id="drawbutton" class="fa-solid select-none fa-pen fa-3x font-bold m-1 hover:text-blue-300"></i>
+            
+            <br class=" select-none">
+            <br class=" select-none">
+            <label for="default-range" class="block select-none mb-2 text-sm font-medium text-main3">Select Pen Width</label>
+            <input id="default-range" type="range" value="10" class="w-11 h-2 bg-gray-200 rounded-lg appearance-none cursor-pointer dark:bg-gray-700">
+
+            <br class=" select-none">
+            <br class=" select-none">
+
+            <button class="text-main3 font-bold py-2 px-4 rounded transition ease-in-out delay-150 hover:-translate-y-1 bg-blue-500 hover:bg-blue-700 select-none hover:scale-30 duration-300">Download PNG</button>
+
+            <!-- <input class="bg-transparent hover:bg-blue-500 text-blue-700 font-semibold hover:text-white py-2 px-4 border border-blue-500 hover:border-transparent rounded " type="button" value="Some">
+            <br>
+            <input class="bg-transparent hover:bg-blue-500 text-blue-700 font-semibold hover:text-white py-2 px-4 border border-blue-500 hover:border-transparent rounded" type="button" value="Thing"> -->
+            <!-- <label class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">Write input</label>
+            <input type="textarea" id="" class="1 w-1/2 bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block p-2.5  dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"> -->
+        </div>
+
+       
+
+    </div>
+
+    <div class="m-auto">
+        <canvas id="mainCanvas" width="" height="" class=" absolute left-[30vw] border-main2 border-[4px] min-w-[200px] min-h-[200px] bg-white"> </canvas>
+    </div>
+
+
+    <script src="Code/CanvasMain.js"></script>
+</body>
+</html>
